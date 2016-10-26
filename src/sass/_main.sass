@@ -1,0 +1,37 @@
+[ng\:cloak], [ng-cloak], .ng-cloak
+  display: none
+.container
+  width: 1200px
+  margin: 0 auto
+
+  @include breakpoint(1200px)
+    width: 100%
+
+  .title
+    font-size: 25px
+    font-weight: 600
+    color: #666666
+    text-align: center
+
+  .controls
+    display: flex
+    justify-content: center
+    margin-top: 25px
+
+    .display-csv
+      text-align: right
+
+    .display-csv, .add-csv
+      width: 30%
+      margin: 5%
+
+
+  table, th, td
+    border: 2px solid black
+    padding: 5px
+    width: calc(100% - 20px)
+
+  table
+    border-collapse: collapse
+    margin: 10px
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Task</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable = yes">
+        <script src="js/vendor.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    </head>
+    <body ng-cloak="" ng-controller="myCtrl">
+        <div class="container">
+            <header>
+                <h1 class="title">Create table from CSV file</h1>
+            </header>
+            <section class="controls">
+                <input class="add-csv" type="file" accept=".csv" filelist="" name="files">
+                <div class="display-csv">
+                    <button class="display-csv-btn" ng-click="processData()">Display CSV as Data Table</button>
+                </div>
+            </section>
+            <section>
+                <div id="divID">
+                    <table>
+                        <tr ng-repeat="x in data">
+                            <td ng-repeat="y in x">{{ y }}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table></table>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

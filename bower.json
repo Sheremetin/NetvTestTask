@@ -1,0 +1,23 @@
+{
+  "name": "mytest",
+  "description": "test task",
+  "main": "gulpfile.js",
+  "authors": [
+    "insh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frontend"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8"
+  }
+}
